@@ -1,0 +1,14 @@
+
+username = input("Enter your username: ")
+
+if len(username) < 5:
+    print("Invalid Username: Username must contain at least 5 characters.")
+
+elif username.strip() == "":
+    print("Invalid Username: Username must not contain only spaces.")
+
+elif username.lower() == "admin":
+    print("Invalid Username: 'admin' is not allowed.")
+
+else:
+    print("Valid Username!")
